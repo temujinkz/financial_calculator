@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #f4f4f5;
+    background: radial-gradient(ellipse at bottom right, #0f172a, #1e1b4b);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+.container {
+    max-width: 640px;
+    margin: auto;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.back-button {
+    color: #06b6d4;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.gradient-text {
+    background: linear-gradient(to right, #ec4899, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-group {
+    margin-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #334155;
+    background: rgba(255, 255, 255, 0.08);
+    color: #f8fafc;
+    font-size: 1rem;
+    outline: none;
+}
+input:focus {
+    border-color: #ec4899;
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    cursor: pointer;
+}
+.btn.primary {
+    background: linear-gradient(to right, #ec4899, #06b6d4);
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.result {
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    display: none;
+}
+.result.show {
+    display: block;
+    animation: fadeInSlide 0.5s ease-out;
+}
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

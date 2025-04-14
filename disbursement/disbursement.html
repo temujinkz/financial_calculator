@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Disbursement Date Calculator</title>
+    <link rel="stylesheet" href="disbursement.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="background"></div>
+<div class="container">
+    <a href="../index.html" class="back-button">← Back to Dashboard</a>
+
+    <div class="card">
+        <h1 class="title gradient-text">Disbursement Date Calculator</h1>
+        <form id="disbursementForm" class="form">
+            <div class="form-group">
+                <label for="startingDate">Starting Date</label>
+                <input type="date" id="startingDate" required />
+            </div>
+
+            <div class="form-group">
+                <label for="hostCountry">Host Country</label>
+                <select id="hostCountry" required></select>
+            </div>
+
+            <div class="form-group">
+                <label for="clientCountry">Client Country</label>
+                <select id="clientCountry" required></select>
+            </div>
+
+            <div class="form-group">
+                <label for="fundingCountry">Funding Country</label>
+                <select id="fundingCountry" required></select>
+            </div>
+
+            <div class="form-group">
+                <label for="businessDays">Number of Business Days</label>
+                <input type="number" id="businessDays" min="1" required />
+            </div>
+
+            <div class="button-group">
+                <button type="submit" id="calculateButton" class="btn primary">Calculate</button>
+                <button type="button" id="exportButton" class="btn">Export</button>
+                <button type="button" id="resetButton" class="btn">Reset</button>
+            </div>
+        </form>
+
+        <div id="resultSection" class="result hidden">
+            <p><strong>Starting Date:</strong> <span id="startDateDisplay"></span></p>
+            <p><strong>Disbursement Date:</strong> <span id="disbursementDateDisplay"></span></p>
+            <p><strong>Business Days:</strong> <span id="totalDaysDisplay"></span></p>
+        </div>
+    </div>
+</div>
+
+<script src="disbursement.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Interest Rate Calculator</title>
+    <link rel="stylesheet" href="interest.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+<div class="container">
+    <a href="../index.html" class="back-button">← Back to Dashboard</a>
+
+    <div class="card">
+        <h1 class="card-title gradient-text">Interest Rate Calculator</h1>
+        <form id="interestForm">
+            <div class="form-group">
+                <label for="fundingRate">Funding Rate (%)</label>
+                <input type="number" id="fundingRate" placeholder="e.g. 5.25" step="0.01" required />
+            </div>
+            <div class="form-group">
+                <label for="arrangerFee">Arranger Fee</label>
+                <input type="number" id="arrangerFee" placeholder="e.g. 1000" required />
+            </div>
+            <div class="form-group">
+                <label for="stockExchangeFee">Stock Exchange Fee</label>
+                <input type="number" id="stockExchangeFee" placeholder="e.g. 500" required />
+            </div>
+            <div class="form-group">
+                <label for="centralDepositoryFee">Central Depository Fee</label>
+                <input type="number" id="centralDepositoryFee" placeholder="e.g. 250" required />
+            </div>
+            <div class="form-group">
+                <label for="legalFee">Legal Fee</label>
+                <input type="number" id="legalFee" placeholder="e.g. 800" required />
+            </div>
+            <div class="form-group">
+                <label for="miscellaneous">Miscellaneous</label>
+                <input type="number" id="miscellaneous" placeholder="e.g. 100" required />
+            </div>
+            <div class="form-group">
+                <label for="weightedLoanMaturity">Weighted Loan Maturity (Years)</label>
+                <input type="number" id="weightedLoanMaturity" placeholder="e.g. 2.5" step="0.01" required />
+            </div>
+            <div class="form-group">
+                <label for="principalAmount">Principal Amount</label>
+                <input type="number" id="principalAmount" placeholder="e.g. 50000" required />
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn primary">Calculate</button>
+                <button type="button" id="resetButton" class="btn">Reset</button>
+            </div>
+        </form>
+
+        <div id="resultSection" class="result">
+            <p><strong>Final Interest Rate:</strong> <span id="finalRateDisplay"></span>%</p>
+        </div>
+    </div>
+</div>
+<script src="interest.js"></script>
+</body>
+</html>

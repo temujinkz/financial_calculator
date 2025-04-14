@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial AI Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard">
+
+<main class="dashboard-container">
+    <div class="dashboard-header">
+        <h1 class="dashboard-title">Power Your <span>Finances</span></h1>
+        <h2 class="dashboard-subtitle">with AI Precision</h2>
+        <p class="dashboard-description">Smart tools for business day calculation, interest management, and automated financial planning</p>
+    </div>
+
+    <div class="dashboard-cards">
+        <a href="disbursement/disbursement.html" class="card card-disbursement">
+            <div class="card-header">
+                <h3>📅 Disbursement Date</h3>
+                <p>Calculate precise disbursement dates based on business days.</p>
+            </div>
+            <div class="card-body">
+                Factor in multiple countries and holiday logic for accuracy.
+            </div>
+            <div class="card-footer">→ Calculate</div>
+        </a>
+
+        <a href="starting/starting.html" class="card card-starting">
+            <div class="card-header">
+                <h3>📆 Starting Date</h3>
+                <p>Work backwards to find the latest starting date.</p>
+            </div>
+            <div class="card-body">
+                Helps determine when you must start to hit your disbursement deadline.
+            </div>
+            <div class="card-footer">→ Calculate</div>
+        </a>
+
+        <a href="interest/interest.html" class="card card-interest">
+            <div class="card-header">
+                <h3>🧮 Interest Calculator</h3>
+                <p>Calculate final interest rate including all associated fees.</p>
+            </div>
+            <div class="card-body">
+                Funding rate, fees, loan maturity—fully covered.
+            </div>
+            <div class="card-footer">→ Calculate</div>
+        </a>
+    </div>
+</main>
+
+<canvas id="animated-bg"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
