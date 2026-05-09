@@ -2,15 +2,15 @@
 
 A small suite of business‑day and interest calculators built for a multilateral bank's operations team. Three tools sit behind a single dashboard:
 
-- **Disbursement Date** — calculate disbursement dates from a starting date, accounting for business days across multiple country calendars and holiday logic.
-- **Starting Date** — work backwards to determine the latest starting date that still hits a target disbursement deadline.
-- **Interest** — interest computation for the same calendar logic.
+- **Disbursement Date:** calculate disbursement dates from a starting date, accounting for business days across multiple country calendars and holiday logic.
+- **Starting Date:** work backwards to determine the latest starting date that still hits a target disbursement deadline.
+- **Interest:** interest computation built on the same calendar logic.
 
 ## Design
 
 - Inter type, dark dashboard with card grid
 - One landing page (`index.html`) routes to three sub‑apps in their own folders
-- Vanilla JS — no framework, no build step
+- Vanilla JS, no framework, no build step
 
 ## Stack
 
